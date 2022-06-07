@@ -1,0 +1,16 @@
+#info{
+	background-image: url("./fondo.jpg");	
+	
+}
+
+.cajai{
+	text-align:center;
+	background-color: rgba(117,41,149,0.7);
+	color: #FFFFFF;
+	padding: 20px;
+}
+.infos{
+	font-size: 40px;
+	margin: auto;
+	color: #FFFFFF;
+}
