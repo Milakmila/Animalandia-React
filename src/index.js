@@ -8,24 +8,22 @@ import Error404 from './pages/error404/error404';
 import {
     BrowserRouter, 
     Routes,
-    Route
+    Route, 
+    Navigate
   } from "react-router-dom";
-
+  import 'bootstrap/dist/css/bootstrap.min.css';
+  
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Header />
     <BrowserRouter>
     <Routes>
-        <Route path="/home">
-          <Home />
-        </Route>
-        <Route path="/perros">
-          <Perros />
-        </Route>
-        <Route path="*">
-          <Error404 />
-        </Route>
+    <Route path="/" element={<Home/>}></Route>
+    <Route path='/perros' element={<Perros/>}></Route>
+
+    <Route path='*' element={<Error404 />}></Route>
+    <Route path='/home' element={<Navigate replace to={"/"} />}></Route>
         </Routes>
     </BrowserRouter>
   

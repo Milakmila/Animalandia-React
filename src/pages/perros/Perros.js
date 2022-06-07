@@ -1,7 +1,6 @@
-import Footer from "../../components/footer/Footer";
-import Header from "../../components/header/Header";
+
 import Navbar from "../../components/navbar/Navbar";
-import { getAll } from "../../components/perros/perros";
+import { getAll } from "../../components/perros/Perros";
 import Razas from '../../components/perros/Razas';
 import './Perros.css'
 
@@ -9,7 +8,7 @@ function Perros() {
     const perros = getAll();
     return (
         <div>
-            <Header />
+           
             <Navbar />
             <div className="container">
                 <h1>Listado de perros</h1>
@@ -30,7 +29,7 @@ function Perros() {
                     }
                 </div>
             </div>
-            <Footer />
+           
         </div>
     )
 }
